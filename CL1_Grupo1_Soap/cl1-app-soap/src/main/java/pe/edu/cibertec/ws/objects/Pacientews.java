@@ -15,6 +15,8 @@ import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlSchemaType;
 import jakarta.xml.bind.annotation.XmlType;
 
+import java.util.Date;
+
 
 /**
  * <p>Clase Java para pacientews complex type.
@@ -60,7 +62,7 @@ public class Pacientews {
     protected String docpaciente;
     @XmlElement(required = true)
     @XmlSchemaType(name = "date")
-    protected XMLGregorianCalendar fechanacpaciente;
+    protected Date fechanacpaciente;
     @XmlElement(required = true)
     protected String emailpaciente;
 
@@ -160,7 +162,7 @@ public class Pacientews {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    public XMLGregorianCalendar getFechanacpaciente() {
+    public Date getFechanacpaciente() {
         return fechanacpaciente;
     }
 
@@ -169,10 +171,10 @@ public class Pacientews {
      * 
      * @param value
      *     allowed object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link Date }
      *     
      */
-    public void setFechanacpaciente(XMLGregorianCalendar value) {
+    public void setFechanacpaciente(Date value) {
         this.fechanacpaciente = value;
     }
 
