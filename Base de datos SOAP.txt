@@ -1,0 +1,19 @@
+CREATE DATABASE cl1_soap
+
+CREATE TABLE paciente(
+idpaciente INT PRIMARY key AUTO_INCREMENT,
+nompaciente VARCHAR(30),
+apepaciente VARCHAR(30),
+docpaciente VARCHAR(30),
+fechanacpaciente DATE,
+emailpaciente VARCHAR(30)
+);
+
+-- Insertar registros de ejemplo en la tabla "paciente"
+INSERT INTO paciente (nompaciente, apepaciente, docpaciente, fechanacpaciente, emailpaciente)
+VALUES
+    ('Juan', 'Pérez', '123456789', '1990-05-15', 'juanperez@email.com'),
+    ('María', 'González', '987654321', '1985-09-20', 'mariagonzalez@email.com'),
+    ('Pedro', 'López', '456789123', '1992-03-10', 'pedrolopez@email.com'),
+    ('Ana', 'Martínez', '789123456', '1988-12-05', 'anamartinez@email.com'),
+    ('Luis', 'Rodríguez', '654321789', '1995-07-30', 'luisrodriguez@email.com');
